@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>be.technobel</groupId>
+    <artifactId>cucumber-tutorial</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <dependencies>
+
+        <!--
+        https://mvnrepository.com/artifact/org.projectlombok/lombok
+        Lombok is a must have dependency to simplify developers' life
+        -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.10</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <!--
+        https://mvnrepository.com/artifact/io.cucumber/cucumber-java8
+        This dependency allows to use the java8 expressions for the step definitions
+        -->
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-java8</artifactId>
+            <version>4.7.4</version>
+            <scope>test</scope>
+        </dependency>
+
+        <!--
+        https://mvnrepository.com/artifact/io.cucumber/cucumber-junit
+        This dependency allow tuning of cucumber to express the plugins used, where are the features located, ...
+        -->
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-junit</artifactId>
+            <version>4.7.1</version>
+            <scope>test</scope>
+        </dependency>
+
+
+        <!--
+        https://mvnrepository.com/artifact/info.cukes/cucumber-jvm
+        This dependency allows to use the Transform annotations of cucumber
+        -->
+        <dependency>
+            <groupId>info.cukes</groupId>
+            <artifactId>cucumber-java</artifactId>
+            <version>1.2.5</version>
+        </dependency>
+
+
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+
+
+</project>
